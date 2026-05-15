@@ -1,0 +1,202 @@
+{
+  "project_name": "lumaare_weather_project_final",
+  "image_size": {
+    "width": 941,
+    "height": 1672
+  },
+  "asset_count": 45,
+  "categories": {
+    "cloudy": {
+      "name_zh": "多云",
+      "name_en": "Cloudy",
+      "count": 1,
+      "files": [
+        "assets/images/cloudy/cloudy_01.png"
+      ]
+    },
+    "cloudy_cold": {
+      "name_zh": "冷云阴天 / 低温阴天",
+      "name_en": "Cold Cloudy / Chilly Overcast",
+      "count": 3,
+      "files": [
+        "assets/images/cloudy_cold/cloudy_cold_01.png",
+        "assets/images/cloudy_cold/cloudy_cold_02.png",
+        "assets/images/cloudy_cold/cloudy_cold_03.png"
+      ]
+    },
+    "fog_mist": {
+      "name_zh": "雾 / 薄雾",
+      "name_en": "Fog / Mist",
+      "count": 3,
+      "files": [
+        "assets/images/fog_mist/fog_mist_01.png",
+        "assets/images/fog_mist/fog_mist_02.png",
+        "assets/images/fog_mist/fog_mist_03.png"
+      ]
+    },
+    "freezing_rain": {
+      "name_zh": "冻雨 / 冰雨",
+      "name_en": "Freezing Rain",
+      "count": 2,
+      "files": [
+        "assets/images/freezing_rain/freezing_rain_01.png",
+        "assets/images/freezing_rain/freezing_rain_02.png"
+      ]
+    },
+    "haze": {
+      "name_zh": "霾 / 灰蒙天气",
+      "name_en": "Haze",
+      "count": 2,
+      "files": [
+        "assets/images/haze/haze_01.png",
+        "assets/images/haze/haze_02.png"
+      ]
+    },
+    "humid_hot_cloudy": {
+      "name_zh": "闷热潮湿 / 暖湿多云",
+      "name_en": "Humid Hot Cloudy",
+      "count": 2,
+      "files": [
+        "assets/images/humid_hot_cloudy/humid_hot_cloudy_01.png",
+        "assets/images/humid_hot_cloudy/humid_hot_cloudy_02.png"
+      ]
+    },
+    "overcast": {
+      "name_zh": "阴天 / 厚云",
+      "name_en": "Overcast",
+      "count": 1,
+      "files": [
+        "assets/images/overcast/overcast_01.png"
+      ]
+    },
+    "partly_cloudy": {
+      "name_zh": "局部多云",
+      "name_en": "Partly Cloudy",
+      "count": 2,
+      "files": [
+        "assets/images/partly_cloudy/partly_cloudy_01.png",
+        "assets/images/partly_cloudy/partly_cloudy_02.png"
+      ]
+    },
+    "rain_cold": {
+      "name_zh": "冷雨",
+      "name_en": "Cold Rain",
+      "count": 2,
+      "files": [
+        "assets/images/rain_cold/rain_cold_01.png",
+        "assets/images/rain_cold/rain_cold_02.png"
+      ]
+    },
+    "rain_heavy": {
+      "name_zh": "大雨",
+      "name_en": "Heavy Rain",
+      "count": 2,
+      "files": [
+        "assets/images/rain_heavy/rain_heavy_01.png",
+        "assets/images/rain_heavy/rain_heavy_02.png"
+      ]
+    },
+    "rain_light": {
+      "name_zh": "小雨",
+      "name_en": "Light Rain",
+      "count": 4,
+      "files": [
+        "assets/images/rain_light/rain_light_01.png",
+        "assets/images/rain_light/rain_light_02.png",
+        "assets/images/rain_light/rain_light_03.png",
+        "assets/images/rain_light/rain_light_04.png"
+      ]
+    },
+    "rain_moderate": {
+      "name_zh": "中雨",
+      "name_en": "Moderate Rain",
+      "count": 3,
+      "files": [
+        "assets/images/rain_moderate/rain_moderate_01.png",
+        "assets/images/rain_moderate/rain_moderate_02.png",
+        "assets/images/rain_moderate/rain_moderate_03.png"
+      ]
+    },
+    "rainstorm": {
+      "name_zh": "暴雨",
+      "name_en": "Rainstorm",
+      "count": 2,
+      "files": [
+        "assets/images/rainstorm/rainstorm_01.png",
+        "assets/images/rainstorm/rainstorm_02.png"
+      ]
+    },
+    "sleet_mixed": {
+      "name_zh": "雨夹雪 / 混合降水",
+      "name_en": "Sleet / Mixed Precipitation",
+      "count": 2,
+      "files": [
+        "assets/images/sleet_mixed/sleet_mixed_01.png",
+        "assets/images/sleet_mixed/sleet_mixed_02.png"
+      ]
+    },
+    "snow_heavy": {
+      "name_zh": "大雪",
+      "name_en": "Heavy Snow",
+      "count": 2,
+      "files": [
+        "assets/images/snow_heavy/snow_heavy_01.png",
+        "assets/images/snow_heavy/snow_heavy_02.png"
+      ]
+    },
+    "snow_light": {
+      "name_zh": "小雪",
+      "name_en": "Light Snow",
+      "count": 2,
+      "files": [
+        "assets/images/snow_light/snow_light_01.png",
+        "assets/images/snow_light/snow_light_02.png"
+      ]
+    },
+    "sunny": {
+      "name_zh": "晴天",
+      "name_en": "Sunny",
+      "count": 1,
+      "files": [
+        "assets/images/sunny/sunny_01.png"
+      ]
+    },
+    "sunny_cold": {
+      "name_zh": "寒冷晴天",
+      "name_en": "Cold Sunny",
+      "count": 3,
+      "files": [
+        "assets/images/sunny_cold/sunny_cold_01.png",
+        "assets/images/sunny_cold/sunny_cold_02.png",
+        "assets/images/sunny_cold/sunny_cold_03.png"
+      ]
+    },
+    "sunny_hot": {
+      "name_zh": "暖晴天 / 高温晴天",
+      "name_en": "Warm Sunny / Hot Sunny",
+      "count": 3,
+      "files": [
+        "assets/images/sunny_hot/sunny_hot_01.png",
+        "assets/images/sunny_hot/sunny_hot_02.png",
+        "assets/images/sunny_hot/sunny_hot_03.png"
+      ]
+    },
+    "thunderstorm": {
+      "name_zh": "雷阵雨 / 雷暴",
+      "name_en": "Thunderstorm",
+      "count": 2,
+      "files": [
+        "assets/images/thunderstorm/thunderstorm_01.png",
+        "assets/images/thunderstorm/thunderstorm_02.png"
+      ]
+    },
+    "windy": {
+      "name_zh": "大风",
+      "name_en": "Windy",
+      "count": 1,
+      "files": [
+        "assets/images/windy/windy_01.png"
+      ]
+    }
+  }
+}

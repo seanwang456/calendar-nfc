@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f6efe6">
+    <meta
+      name="description"
+      content="LUMAARE NFC Calendar 根据日期、位置和天气展示每日天气插画与一句温柔文案。"
+    >
+    <title>LUMAARE NFC Calendar</title>
+    <link rel="icon" href="assets/logo/lumaare-logo.png" type="image/png">
+    <link rel="preload" href="assets/logo/lumaare-logo.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell" id="app" aria-live="polite">
+      <section class="screen screen-loading" id="loadingScreen">
+        <img class="brand-logo" src="assets/logo/lumaare-logo.png" alt="LUMAARE">
+        <p class="loading-copy">正在读取今天的天气...</p>
+        <div class="loading-orbit" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="screen screen-result is-hidden" id="resultScreen">
+        <figure class="art-frame" aria-label="今日天气">
+          <img class="weather-art" id="weatherArt" alt="今日天气插画">
+        </figure>
+
+        <header class="page-header">
+          <img class="brand-logo brand-logo-small" src="assets/logo/lumaare-logo.png" alt="LUMAARE">
+        </header>
+
+        <section class="weather-overlay">
+          <div class="weather-top">
+            <div class="status-row">
+              <span class="status-dot" id="statusDot"></span>
+              <span id="locationStatus">正在确认当前位置</span>
+            </div>
+
+            <div class="temperature-row" id="temperatureRow">
+              <span class="temperature-main" id="temperatureMain">--°</span>
+              <span class="temperature-feels" id="temperatureFeels">体感 --°</span>
+            </div>
+          </div>
+
+          <blockquote class="quote-card">
+            <p id="quoteText">今天也有今天的节奏。</p>
+          </blockquote>
+
+          <section class="fallback-panel is-hidden" id="fallbackPanel">
+            <p id="fallbackMessage">未能读取当前位置，已为你打开默认天气体验。</p>
+            <button class="button button-soft" id="defaultButton" type="button">使用默认天气体验</button>
+          </section>
+
+          <button class="button button-primary" id="refreshButton" type="button">重新获取</button>
+
+          <footer class="date-footer" aria-label="今日日期">
+            <p class="date-line" id="dateLine"></p>
+            <p class="weekday-line" id="weekdayLine"></p>
+          </footer>
+        </section>
+      </section>
+    </main>
+
+    <noscript>
+      <p class="noscript">请开启 JavaScript，以体验 LUMAARE NFC Calendar。</p>
+    </noscript>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
