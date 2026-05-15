@@ -139,10 +139,10 @@ function cacheDom() {
   dom.resultScreen = document.getElementById("resultScreen");
   dom.dateLine = document.getElementById("dateLine");
   dom.weekdayLine = document.getElementById("weekdayLine");
+  dom.weatherTitle = document.getElementById("weatherTitle");
+  dom.weatherMeta = document.getElementById("weatherMeta");
   dom.locationStatus = document.getElementById("locationStatus");
   dom.statusDot = document.getElementById("statusDot");
-  dom.temperatureMain = document.getElementById("temperatureMain");
-  dom.temperatureFeels = document.getElementById("temperatureFeels");
   dom.artFrame = document.querySelector(".art-frame");
   dom.weatherArt = document.getElementById("weatherArt");
   dom.quoteText = document.getElementById("quoteText");
@@ -372,13 +372,16 @@ async function getRandomQuote(category) {
 
 function renderPage(state) {
   const dateInfo = state.dateInfo || getLocalDateInfo();
+  const categoryLabel = CATEGORY_LABELS[state.category] || "今日天气";
+  const temperature = formatTemperature(state.weather.temperature_2m);
+  const apparentTemperature = formatTemperature(state.weather.apparent_temperature);
 
   dom.dateLine.textContent = dateInfo.zhDate;
   dom.weekdayLine.textContent = `${dateInfo.weekday} · ${dateInfo.isoDate}`;
+  dom.weatherTitle.textContent = categoryLabel;
+  dom.weatherMeta.textContent = `${temperature} · 体感 ${apparentTemperature}`;
   dom.locationStatus.textContent = state.status;
   dom.statusDot.classList.toggle("is-muted", Boolean(state.isFallback));
-  dom.temperatureMain.textContent = formatTemperature(state.weather.temperature_2m);
-  dom.temperatureFeels.textContent = `体感 ${formatTemperature(state.weather.apparent_temperature)}`;
   dom.quoteText.textContent = state.quote;
   dom.weatherArt.classList.remove("is-visible");
   dom.weatherArt.src = state.imagePath;

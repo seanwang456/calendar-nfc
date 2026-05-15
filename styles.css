@@ -86,7 +86,7 @@ button {
 }
 
 .brand-logo-small {
-  width: clamp(66px, 18vw, 104px);
+  width: clamp(82px, 24vw, 128px);
   margin: 0;
 }
 
@@ -134,8 +134,8 @@ button {
 .page-header {
   position: absolute;
   z-index: 3;
-  top: max(16px, env(safe-area-inset-top, 0px));
-  right: 18px;
+  top: max(22px, env(safe-area-inset-top, 0px));
+  right: 20px;
   width: auto;
   padding: 0;
 }
@@ -160,7 +160,7 @@ button {
   width: 100%;
   min-height: 100vh;
   min-height: 100svh;
-  padding: max(24px, env(safe-area-inset-top, 0px)) 20px calc(18px + var(--safe-bottom));
+  padding: max(24px, env(safe-area-inset-top, 0px)) 28px calc(32px + var(--safe-bottom));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,11 +170,41 @@ button {
 
 .weather-top {
   width: 100%;
-  margin-top: 82px;
+  margin-top: clamp(92px, 17vh, 158px);
   display: flex;
   flex-direction: column;
   align-items: center;
   pointer-events: auto;
+}
+
+.weather-title {
+  margin: 0;
+  color: rgba(61, 75, 77, 0.76);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: clamp(62px, 22vw, 118px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.16em;
+  text-indent: 0.16em;
+  text-shadow: 0 1px 22px rgba(255, 255, 255, 0.62);
+}
+
+.weather-meta {
+  margin: 16px 0 0;
+  color: rgba(61, 75, 77, 0.68);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  letter-spacing: 0.16em;
+  text-indent: 0.16em;
+  text-shadow: 0 1px 18px rgba(255, 255, 255, 0.64);
+}
+
+.location-status {
+  display: none;
+  margin: 10px 0 0;
+  color: rgba(91, 91, 86, 0.55);
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 .quote-card,
@@ -200,6 +230,7 @@ button {
 }
 
 .status-dot {
+  display: none;
   width: 7px;
   height: 7px;
   flex: 0 0 auto;
@@ -265,8 +296,8 @@ button {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(180deg, rgba(255, 252, 247, 0.3) 0%, transparent 25%, transparent 64%, rgba(247, 239, 229, 0.22) 100%),
-    radial-gradient(circle at 50% 48%, transparent 0%, transparent 48%, rgba(251, 246, 238, 0.28) 100%);
+    linear-gradient(180deg, rgba(255, 252, 247, 0.62) 0%, rgba(255, 252, 247, 0.18) 24%, transparent 46%, rgba(247, 239, 229, 0.34) 100%),
+    radial-gradient(circle at 50% 45%, transparent 0%, transparent 42%, rgba(251, 246, 238, 0.24) 100%);
   pointer-events: none;
 }
 
@@ -291,20 +322,22 @@ button {
   width: 100%;
   max-width: 440px;
   margin: auto 0 0;
-  padding: 16px 18px 18px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(255, 252, 247, 0.74);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(18px);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .quote-card p {
   margin: 0;
-  font-size: clamp(19px, 5.3vw, 25px);
-  line-height: 1.52;
+  color: rgba(41, 39, 36, 0.78);
+  font-size: clamp(17px, 4.7vw, 23px);
+  line-height: 1.75;
   font-family: Georgia, "Times New Roman", "Songti SC", serif;
-  letter-spacing: 0;
+  letter-spacing: 0.18em;
+  text-shadow: 0 1px 18px rgba(255, 255, 255, 0.8);
 }
 
 .fallback-panel {
@@ -342,14 +375,20 @@ button {
 }
 
 .button-primary {
-  margin-top: 18px;
-  color: #fffaf3;
-  background: linear-gradient(135deg, var(--accent), var(--accent-deep));
-  box-shadow: 0 16px 32px rgba(125, 89, 54, 0.22);
+  min-height: 28px;
+  min-width: 72px;
+  margin-top: 12px;
+  color: rgba(70, 82, 82, 0.62);
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  font-size: 11px;
+  opacity: 0.58;
 }
 
 .date-footer {
   width: 100%;
+  display: none;
   margin-top: 18px;
   color: var(--muted);
 }
@@ -406,21 +445,22 @@ button {
   }
 
   .brand-logo-small {
-    width: clamp(58px, 16vw, 88px);
+    width: clamp(76px, 22vw, 112px);
   }
 
   .weather-overlay {
     padding-top: max(18px, env(safe-area-inset-top, 0px));
-    padding-bottom: calc(14px + var(--safe-bottom));
+    padding-right: 22px;
+    padding-bottom: calc(24px + var(--safe-bottom));
+    padding-left: 22px;
   }
 
   .weather-top {
-    margin-top: 62px;
+    margin-top: clamp(76px, 15vh, 106px);
   }
 
   .quote-card {
     margin-top: auto;
-    padding: 14px 15px 16px;
   }
 }
 

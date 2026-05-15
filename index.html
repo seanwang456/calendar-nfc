@@ -36,15 +36,11 @@
 
         <section class="weather-overlay">
           <div class="weather-top">
-            <div class="status-row">
-              <span class="status-dot" id="statusDot"></span>
-              <span id="locationStatus">正在确认当前位置</span>
-            </div>
+            <h1 class="weather-title" id="weatherTitle">今日天气</h1>
 
-            <div class="temperature-row" id="temperatureRow">
-              <span class="temperature-main" id="temperatureMain">--°</span>
-              <span class="temperature-feels" id="temperatureFeels">体感 --°</span>
-            </div>
+            <p class="weather-meta" id="weatherMeta">--° · 体感 --°</p>
+            <p class="location-status" id="locationStatus">正在确认当前位置</p>
+            <span class="status-dot" id="statusDot" aria-hidden="true"></span>
           </div>
 
           <blockquote class="quote-card">
